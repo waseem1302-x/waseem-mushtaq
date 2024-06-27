@@ -107,7 +107,7 @@
           </div>
         {%- endif -%}
         <div class="card__content">
-          <div class="card__information">
+          <!-- <div class="card__information">
             <h3
               class="card__heading"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
@@ -123,7 +123,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
-          </div>
+          </div> -->
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
@@ -599,7 +599,7 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
+        <!-- <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
@@ -612,7 +612,7 @@
             {%- endif -%}
             {% render 'price', show_compare_at_price: true %}
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
