@@ -95,7 +95,7 @@
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
+                <!-- {{ 'onboarding.collection_title' | t }} -->
                 {%- endif -%}
                 {%- if card_collection.description == blank -%}
                   <span class="icon-wrap">{% render 'icon-arrow' %}</span>
