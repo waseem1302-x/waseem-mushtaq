@@ -27,6 +27,7 @@
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+  
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -163,3 +164,17 @@
     </div>
   </div>
 {%- endif -%}
+
+<!-- snippets/product-popup.liquid -->
+<div id="product-info-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-button" onclick="closePopup();">&times;</span>
+    <img id="popup-product-image" src="" alt="Product Image">
+    <h2 id="popup-product-title"></h2>
+    <p id="popup-product-price"></p>
+    <p id="popup-product-description"></p>
+    <p id="popup-product-colors"></p>
+    <p id="popup-product-sizes"></p>
+  </div>
+</div>
+
