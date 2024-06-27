@@ -28,8 +28,12 @@
 
     {% render 'meta-tags' %}
 
+    <!-- Inside theme.liquid -->
+
+    <link rel="stylesheet" href="{{ 'popup-product.css' | asset_url }}">
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'popup-product.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
