@@ -1,6 +1,9 @@
 async function fetchProductInfo(productHandle) {
   try {
     const response = await fetch(`/products/${productHandle}.js`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const product = await response.json();
     showProductInfo(product);
   } catch (error) {
