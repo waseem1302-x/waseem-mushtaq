@@ -102,6 +102,22 @@
 
 .card .media {
   width: 100%;
+   position: relative;
+  display: inline-block;
+}
+.product-info-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .card__media {
