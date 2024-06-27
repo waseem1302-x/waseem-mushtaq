@@ -11,6 +11,7 @@
   font-size: 20px;
   cursor: pointer;
   z-index: 10;
+  border-radius:50%;
 }
 
 .card--card .quick-add {
@@ -366,7 +367,6 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
-  border-radius:50%;
 }
 
 quick-add-modal .product-media-container.constrain-height {
