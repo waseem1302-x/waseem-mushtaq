@@ -444,20 +444,6 @@
       </div>
       {% render 'product-media-modal', product: product, variant_images: variant_images %}
     </div>
-
-    <!-- Product info Popup Button -->
-    
-    <div id= " product-info-popup" class= " popup ">
-      <div class = "popup-content">
-        <span class=" close-button" onclick="closePopup();">&times;</span>
-        <img id= "popup-poduct-image" src=" " alt="Product Image">
-        <h2 id=" product-title "></h2>
-        <p id=" product-price "></p>
-        <p id=" product-description "></p>
-        <p id=" product-color "></p>
-        <p id=" product-sizes "></p>
-      </div>
-    </div>
   </section>
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
