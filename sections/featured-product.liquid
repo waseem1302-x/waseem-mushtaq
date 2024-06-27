@@ -96,12 +96,12 @@
                 {%- when '@app' -%}
                   {% render block %}
                 {%- when 'text' -%}
-                  <p
+                  <!-- <p
                     class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                     {{ block.shopify_attributes }}
                   >
                     {{- block.settings.text -}}
-                  </p>
+                  </p> -->
                 {%- when 'title' -%}
                   <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- if product.title != blank -%}
