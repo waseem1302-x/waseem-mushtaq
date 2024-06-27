@@ -32,7 +32,6 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <link rel="stylesheet" href="{{ 'popup-product.css' | asset_url }}">
-    <script src="{{ 'popup-product.js' | asset_url }}" defer></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -358,19 +357,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
-    <!-- Popup Product Info -->
-    <div id="product-info-popup" class="popup">
-      <div class="popup-content">
-        <span class="close-button" onclick="closePopup();">&times;</span>
-        <img id="popup-product-image" src="" alt="Product Image">
-        <h2 id="popup-product-title"></h2>
-        <p id="popup-product-price"></p>
-        <p id="popup-product-description"></p>
-        <p id="popup-product-colors"></p>
-        <p id="popup-product-sizes"></p>
-      </div>
-    </div>
-
   </body>
 </html>
