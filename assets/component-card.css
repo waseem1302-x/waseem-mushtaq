@@ -107,8 +107,6 @@
 .card__media {
   margin: var(--image-padding);
   width: calc(100% - 2 * var(--image-padding));
-  position: relative;
-  display: inline-block;
 }
 .product-info-button {
   position: absolute;
