@@ -20,7 +20,7 @@
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-{% include 'product-info-popup' %}
+{% render 'product-info-popup' %}
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
@@ -145,8 +145,8 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
-        <!-- <div class="card__information">
+      <!-- <div class="card__content">
+         <div class="card__information">
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -289,7 +289,7 @@
               {% endif %}
             {%- endif -%}
           </div>
-        </div> -->
+        </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">
@@ -619,3 +619,4 @@
     </div>
   </div>
 {%- endif -%}
+ -->
