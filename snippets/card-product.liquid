@@ -144,7 +144,7 @@
         </div>
       </div>
       <div class="card__content">
-        <!-- <div class="card__information">
+        <div class="card__information">
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -287,7 +287,7 @@
               {% endif %}
             {%- endif -%}
           </div>
-        </div> -->
+        </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">
@@ -308,11 +308,7 @@
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-
-            {% comment %}
                   {{ 'products.product.choose_options' | t }}
-            {% endcomment %}
                   {%- if horizontal_quick_add -%}
                     <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                   {%- endif -%}
